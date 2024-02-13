@@ -7,7 +7,6 @@ sudo apt update
 sudo apt install apache2
 sudo ufw allow 'Apache'
 ```
-
 **Step 2 — Installing MySQL**
 
 ```bash
@@ -30,7 +29,6 @@ Once the installation is finished, you can run the following command to confirm 
 ```bash
 php -v
 ```
-
 **Step 4 — Creating a Virtual Host for your Website**
 
 Create the directory for **your_domain** as follows:
