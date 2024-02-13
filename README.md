@@ -138,7 +138,7 @@ sudo rm /var/www/my_domain/info.php
 
 If you want to test whether PHP is able to connect to MySQL and execute database queries, you can create a test table with dummy data and query for its contents from a PHP script. Before we can do that, we need to create a test database and a new MySQL user properly configured to access it.
 
-At the time of this writing, the native MySQL PHP library mysqlnd doesn’t [support][https://www.php.net/manual/en/ref.pdo-mysql.php] ```caching_sha2_authentication```, the default authentication method for MySQL 8. We’ll need to create a new user with the ```mysql_native_password``` authentication method in order to be able to connect to the MySQL database from PHP.
+At the time of this writing, the native MySQL PHP library mysqlnd doesn’t [support](https://www.php.net/manual/en/ref.pdo-mysql.php) ```caching_sha2_authentication```, the default authentication method for MySQL 8. We’ll need to create a new user with the ```mysql_native_password``` authentication method in order to be able to connect to the MySQL database from PHP.
 
 We’ll create a database named **example_database** and a user named **example_user, but you can replace these names with different values.
 
@@ -243,4 +243,4 @@ http://your_domain/todo_list.php
 **Conclusion**
 In this guide, we’ve built a flexible foundation for serving PHP websites and applications to your visitors, using Apache as web server and MySQL as database system.
 
-As an immediate next step, you should ensure that connections to your web server are secured, by serving them via HTTPS. In order to accomplish that, you can use [Let’s Encrypt][https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04] to secure your site with a free TLS/SSL certificate.
+As an immediate next step, you should ensure that connections to your web server are secured, by serving them via HTTPS. In order to accomplish that, you can use [Let’s Encrypt](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04) to secure your site with a free TLS/SSL certificate.
