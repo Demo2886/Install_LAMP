@@ -37,7 +37,7 @@ Create the directory for **your_domain** as follows:
 
 ```bash
 sudo mkdir /var/www/my_domain
-``
+```
 Next, assign ownership of the directory with the $USER environment variable, which will reference your current system user:
 
 ```bash
